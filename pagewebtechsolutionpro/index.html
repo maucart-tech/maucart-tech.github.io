@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Solution TechPRO - Servicio técnico informático en Tacna, Perú. Reparación de PC y laptops, cambio de pantallas, baterías, rescate de equipos mojados y repuestos." />
+  <title>Solution TechPRO · Tu Aliado de Confianza en Tacna</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <!-- CSS Modular: General y Específico de Inicio -->
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-accent-line"></div>
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <img src="assets/logo.png" alt="Solution TechPRO Logo" class="brand-logo" />
+        <span class="brand-name">SOLUTION TECHPRO</span>
+      </a>
+
+      <!-- Menu Escritorio -->
+      <nav class="nav-desktop">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#como-trabajamos" class="nav-link">¿Cómo trabajamos?</a>
+        <a href="#repuestos" class="nav-link">Repuestos</a>
+        <a href="#resenas" class="nav-link">Reseñas</a>
+        <a href="#ubicanos" class="nav-link">Ubícanos</a>
+        
+        <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20solicitar%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20mi%20equipo." 
+           target="_blank" rel="noopener noreferrer" class="wa-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.115 1.523 5.845L.057 23.142a.5.5 0 00.617.617l5.297-1.466A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.013-1.376l-.359-.214-3.724 1.031 1.031-3.724-.214-.359A9.805 9.805 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Boton Modo Oscuro Claro -->
+        <button class="theme-toggle-btn" aria-label="Cambiar tema">🌙</button>
+      </nav>
+
+      <!-- Botones Menu Movil -->
+      <div class="nav-mobile-actions">
+        <button class="theme-toggle-btn" aria-label="Cambiar tema">🌙</button>
+        <button class="nav-mobile-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <!-- Menu Desplegable Movil -->
+    <div class="mobile-menu-drawer">
+      <nav class="mobile-nav-links">
+        <a href="#servicios"><span>🛠️ Servicios</span><span>→</span></a>
+        <a href="#como-trabajamos"><span>🎬 ¿Cómo trabajamos?</span><span>→</span></a>
+        <a href="#repuestos"><span>📦 Catálogo de Repuestos</span><span>→</span></a>
+        <a href="#resenas"><span>⭐ Reseñas de Clientes</span><span>→</span></a>
+        <a href="#ubicanos"><span>📍 Ubicación y Horarios</span><span>→</span></a>
+        <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20solicitar%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20mi%20equipo." 
+           target="_blank" rel="noopener noreferrer" class="mobile-wa-highlight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.115 1.523 5.845L.057 23.142a.5.5 0 00.617.617l5.297-1.466A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.013-1.376l-.359-.214-3.724 1.031 1.031-3.724-.214-.359A9.805 9.805 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+          </svg>
+          <span>WhatsApp: 918 682 006</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section hero-grid">
+      <div class="container hero-grid-layout">
+        
+        <!-- Info Izquierda -->
+        <div>
+          <div class="hero-tag">
+            <span class="hero-pulse-dot"></span>
+            <span class="mono">// SERVICIO TECNICO INFORMATICO</span>
+          </div>
+
+          <h1 class="hero-title">
+            Reparaciones de confianza y <span class="highlight">soporte técnico experto</span>
+          </h1>
+
+          <p class="hero-desc">
+            Más de 5 años de experiencia en soporte técnico para tu PC, laptop, redes y más. Tu aliado de confianza en Tacna.
+          </p>
+
+          <!-- Banner de Garantía Anti-Cambio de Piezas -->
+          <div class="hero-trust-banner">
+            <span class="trust-banner-icon">📸</span>
+            <div class="trust-banner-text">
+              <strong>Ticket de soporte:</strong> Fotografiamos y sellamos tus componentes al recibir tu equipo.
+            </div>
+          </div>
+
+          <!-- 6 Caracteristicas con Checkmarks -->
+          <div class="hero-features">
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Reparación de Hardware</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Mantenimiento Preventivo</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Soporte de Software</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Redes y Conectividad</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Ensamblaje de PC</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#EF7C00" fill-opacity="0.15"/>
+                <path d="M7 12l4 4 6-7" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Ticket Digital + Fotos de Piezas</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20solicitar%20un%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20mi%20equipo." 
+               target="_blank" rel="noopener noreferrer" class="wa-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.115 1.523 5.845L.057 23.142a.5.5 0 00.617.617l5.297-1.466A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.013-1.376l-.359-.214-3.724 1.031 1.031-3.724-.214-.359A9.805 9.805 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+              </svg>
+              <span>Escribir al WhatsApp</span>
+            </a>
+
+            <span class="hero-phone-text">
+              <svg width="15" height="15" fill="none" viewBox="0 0 24 24">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 16.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>918 682 006</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Tarjeta Visual Destacada (Técnico + Ticket Superpuesto) -->
+        <div class="hero-card-wrapper hero-composition-wrapper">
+          <div class="hero-card-glow"></div>
+          
+          <div class="hero-tecnico-card">
+            <!-- Imagen Principal: Técnico que sobresale -->
+            <div class="tecnico-img-box">
+              <img src="assets/reparacion123.jpg" alt="Técnico especialista de Solution TechPRO" class="hero-tecnico-img" />
+            </div>
+
+            <!-- Imagen Superpuesta: Ticket abajo ocupando un pequeño espacio -->
+            <div class="ticket-overlay-card">
+              <img src="assets/ticket.jpg" alt="Ticket de soporte técnico con fotografía y sellado de partes" class="hero-ticket-img" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section-services" id="servicios">
+      <div class="container">
+        
+        <!-- Header de Sección -->
+        <div class="services-header-intro">
+          <span class="section-label">// catálogo de servicios profesionales</span>
+          <h2 class="services-title">Soluciones Técnicas de Alta Especialización</h2>
+          <p class="services-subtitle">
+            Diagnóstico transparente, repuestos de calidad original y garantía certificada en Tacna. Conoce nuestros 12 servicios especializados:
+          </p>
+        </div>
+
+        <!-- Grilla de 12 Servicios con Imágenes Reales -->
+        <div class="services-grid-12">
+
+          <!-- 1. Reparación de Bisagras -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/bisagras.jpg" alt="Reparación de Bisagras de Laptop con Resina" loading="lazy" />
+              <span class="service-tag-badge">1. Reparación de Bisagras</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="bisagras.html">¿Sientes que tu laptop se va a partir cada vez que la abres?</a>
+              </h3>
+              <p class="service-card-desc">
+                Reconstrucción profunda de carcasas y anclajes con <strong>resina epóxica de alta resistencia</strong> y calibración suave de torque. Aprovechamos el desarmado para incluirte <strong>GRATIS</strong> el mantenimiento térmico y sopleteo de ventiladores.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">RESINA EPÓXICA</span>
+                <span class="price-pill">CALIBRACIÓN TORQUE</span>
+                <span class="price-pill">MANTTO GRATIS</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="bisagras.html" class="service-btn-landing">
+                  Ver Detalles y Beneficios →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20reparaci%C3%B3n%20de%20bisagras%20con%20mantenimiento%20gratis%20incluido." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar reparación de bisagras + Mantto Gratis</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Baterías para Laptop -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/baterias.jpg" alt="Baterías para Laptop Gama Alta" loading="lazy" />
+              <span class="service-tag-badge">2. Baterías para Laptop Actuales</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="baterias.html">¿Vives atado a un enchufe?</a>
+              </h3>
+              <p class="service-card-desc">
+                Baterías de <strong>calidad original certificada</strong> para laptops convencionales, corporativas y gamers de alta exigencia (ASUS ROG, TUF, HP OMEN, Lenovo Legion). Recupera de 4 a 6 horas de autonomía real y rendimiento estable.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Extraíbles desde S/ 75</span>
+                <span class="price-pill">Internas desde S/ 100</span>
+                <span class="price-pill">Calidad Original</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="baterias.html" class="service-btn-landing">
+                  Ver Catálogo de Baterías →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20bater%C3%ADa%20para%20mi%20modelo%20de%20laptop." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar batería para mi modelo (Desde S/ 75)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Teclados de Laptop -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/teclado.jpg" alt="Teclados de Laptop Originales" loading="lazy" />
+              <span class="service-tag-badge">3. Teclados de Laptop</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="teclados.html">¿Tu teclado presenta fallas o responde mal al escribir?</a>
+              </h3>
+              <p class="service-card-desc">
+                Reemplazo de teclados con el <strong>repuesto exacto original</strong>, incluyendo modelos retroiluminados RGB y remachados con sellado térmico de fábrica y garantía escrita.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Instalación desde S/ 90</span>
+                <span class="price-pill">Garantía Escrita</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="teclados.html" class="service-btn-landing">
+                  Ver Opciones de Teclados →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20el%20cambio%20de%20teclado%20para%20mi%20laptop." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar cambio de teclado</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Programas para Mac -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/software%20mac(programa%20mac).jpeg" alt="Programas para Mac Apple Silicon" loading="lazy" />
+              <span class="service-tag-badge">4. Programas para Mac</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="programas-mac.html">¿Problemas para instalar aplicaciones en tu Mac?</a>
+              </h3>
+              <p class="service-card-desc">
+                Instalación de software 100% nativo y compatible para Apple Silicon (chips M1 a M5 y procesadores Intel). Adobe CC, Office, diseño y utilidades de ingeniería, optimizados sin alterar la seguridad de macOS.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Apple Silicon M1 - M5</span>
+                <span class="price-pill">Adobe & Office</span>
+                <span class="price-pill">Soporte Seguro</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="programas-mac.html" class="service-btn-landing">
+                  Ver Software para Mac →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20programas%20para%20mi%20Mac%20Apple%20Silicon." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar programas para Mac</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Pantallas de Laptop -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/cambio%20de%20pantalla.jpg" alt="Cambio de Pantalla de Laptop" loading="lazy" />
+              <span class="service-tag-badge">5. Pantallas de Laptop Actuales</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="pantallas.html">¿Tienes problemas de imagen?</a>
+              </h3>
+              <p class="service-card-desc">
+                Cambio exprés de pantallas de <strong>calidad original</strong>: paneles IPS Full HD, 2K, 144Hz gamer y pantallas táctiles de 30 y 40 pines slim. Diagnóstico inmediato y stock para todas las marcas hasta 23 pulgadas.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">IPS Full HD & 2K</span>
+                <span class="price-pill">30 & 40 Pines Slim</span>
+                <span class="price-pill">Calidad Original</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="pantallas.html" class="service-btn-landing">
+                  Ver Modelos de Pantallas →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20pantalla%20calidad%20original%20para%20mi%20laptop." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar pantalla calidad original</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Cargadores para Laptop -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/cargadores.jpg" alt="Cargadores de Alta Potencia para Laptop" loading="lazy" />
+              <span class="service-tag-badge">6. Cargadores para Laptop Actuales</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="cargadores.html">¿Tu cargador dejó de funcionar?</a>
+              </h3>
+              <p class="service-card-desc">
+                Cargadores de <strong>calidad original y alta potencia</strong> certificados para todas las marcas (HP, Dell, Lenovo, Asus, Acer, Apple). Disponibilidad en potencias estándar y gamer de 180W, 230W, 300W y hasta 400W con voltaje estabilizado.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Hasta 400W Gamer</span>
+                <span class="price-pill">Voltaje Estabilizado</span>
+                <span class="price-pill">Boleta / Factura</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="cargadores.html" class="service-btn-landing">
+                  Ver Cargadores Certificados →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20un%20cargador%20de%20alta%20potencia%20para%20mi%20laptop." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar cargador de alta potencia</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Reparación Electrónica y Jacks -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/Jack.jpg" alt="Reparación Electrónica y Jacks de Carga" loading="lazy" />
+              <span class="service-tag-badge">7. Reparación Electrónica y Jacks</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="reparacion-electronica.html">¿Falla el conector donde enchufas el cargador?</a>
+              </h3>
+              <p class="service-card-desc">
+                Diagnóstico de placa madre y cambio de jacks de carga con micro-soldadura de precisión. Servicio transparente: generamos <strong>ticket de ingreso</strong>, compartimos <strong>fotos como evidencia del daño</strong> y procedemos únicamente bajo tu aprobación.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Ticket de Ingreso</span>
+                <span class="price-pill">Fotos de Evidencia</span>
+                <span class="price-pill">Micro-Soldadura</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="reparacion-electronica.html" class="service-btn-landing">
+                  Conoce el Proceso Transparente →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20reparaci%C3%B3n%20electr%C3%B3nica%20o%20jack%20de%20mi%20laptop." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar reparación electrónica y jacks</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Antivirus, VPN y Protección Digital -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/antivirus.jpg" alt="Antivirus y Seguridad Digital" loading="lazy" />
+              <span class="service-tag-badge">8. Antivirus, VPN y Protección Digital</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="antivirus.html">¿Preocupado por la privacidad y seguridad de tu información?</a>
+              </h3>
+              <p class="service-card-desc">
+                Seguridad digital completa contra ransomware, robo de contraseñas, espionaje por webcam o micrófono y amenazas bancarias. Soluciones con <strong>VPN segura de alta velocidad</strong> para proteger tu navegación y privacidad personal.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Blindaje Bancario</span>
+                <span class="price-pill">VPN Segura</span>
+                <span class="price-pill">Anti-Ransomware</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="antivirus.html" class="service-btn-landing">
+                  Ver Paquetes de Seguridad →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20protecci%C3%B3n%20antivirus%20y%20VPN%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar antivirus y protección VPN</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Programas PC o Laptop -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/software(programa).jpg" alt="Programas para Laptop y PC" loading="lazy" />
+              <span class="service-tag-badge">9. Programas PC o Laptop Software</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="programas-pc.html">¿Tienes problemas intentando instalar software por tu cuenta?</a>
+              </h3>
+              <p class="service-card-desc">
+                Instalación de suites profesionales (Office, Adobe Master Collection, AutoCAD, utilidades de ingeniería y diseño). Garantizamos configuración limpia, libre de malware y con <strong>optimización del sistema</strong> para máximo rendimiento.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Office & Adobe</span>
+                <span class="price-pill">Ingeniería & Diseño</span>
+                <span class="price-pill">Optimización Incluida</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="programas-pc.html" class="service-btn-landing">
+                  Ver Software Disponible →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20instalaci%C3%B3n%20de%20programas%20con%20optimizaci%C3%B3n%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar instalación de programas + Optimización</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Recuperación de Datos -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/datos%20recuperar.jpg" alt="Recuperación de Datos de Discos y Memorias" loading="lazy" />
+              <span class="service-tag-badge">10. Recuperación de Datos</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="recuperacion-datos.html">¿Se borró tu tesis o los reportes del trabajo por accidente?</a>
+              </h3>
+              <p class="service-card-desc">
+                Recuperación especializada de archivos en discos duros HDD, unidades SSD, tarjetas SD y memorias USB no reconocidas o formateadas por error. Proceso seguro bajo estricta <strong>confidencialidad profesional</strong> y sin manipular tus datos.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">HDD / SSD / Memorias</span>
+                <span class="price-pill">Particiones Borradas</span>
+                <span class="price-pill">Confidencialidad 100%</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="recuperacion-datos.html" class="service-btn-landing">
+                  Ver Servicio de Recuperación →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20recuperaci%C3%B3n%20de%20datos%20de%20mi%20disco%20o%20memoria." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar recuperación de datos</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Instalación de Programas Remota -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/remoto.png" alt="Instalación Remota de Programas" loading="lazy" />
+              <span class="service-tag-badge">11. Instalación de Programas Vía Remota</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="instalacion-remota.html">¿Necesitas soporte técnico urgente pero no puedes salir de casa?</a>
+              </h3>
+              <p class="service-card-desc">
+                Soporte y configuración en tiempo real a través de <strong>AnyDesk o TeamViewer</strong>. Instalamos y dejamos operativos tus programas mientras observas todo el proceso en vivo en tu pantalla, ahorrándote tiempo y traslados.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Conexión 100% Segura</span>
+                <span class="price-pill">Atención Inmediata</span>
+                <span class="price-pill">Sin Moverte de Casa</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="instalacion-remota.html" class="service-btn-landing">
+                  Cómo Funciona el Soporte Remoto →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20la%20instalaci%C3%B3n%20remota%20de%20software%20por%20AnyDesk." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar instalación remota de software</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Venta de Licencias Originales Facturadas -->
+          <article class="service-card-modern">
+            <div class="service-img-thumb">
+              <img src="img-servicios/licencias.jfif" alt="Venta de Licencias Originales Facturadas" loading="lazy" />
+              <span class="service-tag-badge">12. Licencias Originales Facturadas</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">
+                <a href="licencias.html">¿Aparecen mensajes molestos pidiendo que actives tu software?</a>
+              </h3>
+              <p class="service-card-desc">
+                Licencias 100% originales y permanentes para Windows 10/11 Pro, Office 2021/2024, Microsoft 365, AutoCAD y Adobe. Activación genuina y entrega formal con <strong>comprobante oficial de pago (boleta o factura con RUC)</strong>.
+              </p>
+              <div class="service-price-pills">
+                <span class="price-pill">Windows 10/11 Pro</span>
+                <span class="price-pill">Office 2021 / 2024</span>
+                <span class="price-pill">Boleta o Factura con RUC</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="licencias.html" class="service-btn-landing">
+                  Ver Lista de Licencias Legales →
+                </a>
+                <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20cotizar%20licencias%20originales%20con%20factura%20o%20boleta." target="_blank" rel="noopener noreferrer" class="service-btn-direct-wa">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.56 20.15 9.11 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.59L5.06 16.27C4.24 14.97 3.8 13.46 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.05 20.15Z"/></svg>
+                  <span>Cotizar licencia original con factura</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE VIDEO: ¿CÓMO TRABAJAMOS? -->
+    <section class="section-workflow" id="como-trabajamos">
+      <div class="container">
+
+        <!-- Header de Sección -->
+        <div class="workflow-header">
+          <span class="section-label">// Cuidamos tu equipo como si fuera nuestro</span>
+          <h2 class="workflow-title">¿Cómo trabajamos?</h2>
+        </div>
+
+        <!-- Reproductor de Video Showcase Pro -->
+        <div class="video-showcase-wrapper">
+          <!-- Barra superior estilo reproductor de taller / HUD -->
+          <div class="video-player-header">
+            <div class="video-status-indicator">
+              <span class="status-live-dot"></span>
+              <span class="mono">SOLUTION TECHPRO · TALLER EN ACCIÓN</span>
+            </div>
+            <div class="video-quality-tag">
+              <span class="mono">1080p FULL HD</span>
+            </div>
+          </div>
+
+          <!-- Iframe Responsive 16:9 de YouTube -->
+          <div class="video-iframe-container">
+            <!-- REEMPLAZA EL ID DEL VIDEO DE YOUTUBE:
+                 Para colocar tu propio video, solo cambia "ScMzIvxBSi4" por el ID de tu video en YouTube
+                 Ejemplo: https://www.youtube.com/embed/TU_ID_AQUI -->
+            <iframe 
+              src="https://www.youtube.com/embed/fjwZpUV2wFs?rel=0&modestbranding=1" 
+              title="¿Cómo trabajamos en Solution TechPRO? Proceso de diagnóstico y reparación técnica" 
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Barra de confianza al pie del video -->
+          <div class="video-player-footer">
+            <div class="video-footer-feature">
+              <span class="feature-icon">📸</span>
+              <div>
+                <strong>Ticket de soporte</strong>
+                <span>Fotografiamos y sellamos cada componente de tu equipo</span>
+              </div>
+            </div>
+            <div class="video-footer-feature">
+              <span class="feature-icon">🛡️</span>
+              <div>
+                <strong>Presupuesto honesto y garantía escrita</strong>
+                <span>Te informamos el costo exacto antes de proceder. Sin sorpresas ni cobros ocultos.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REPUESTOS -->
+    <section class="section-repuestos" id="repuestos">
+      <div class="container">
+        
+        <div class="section-header-flex">
+          <div>
+            <span class="section-label">// tienda de repuestos</span>
+            <h2 style="font-size: 2rem; font-weight: 900; margin-top: 0.5rem;">Repuestos para Laptop</h2>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.25rem;">
+              Stock en tienda · Precios en soles · Garantía incluida
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <button id="repuestosPrevBtn" class="carousel-nav-btn" aria-label="Anterior">←</button>
+            <span id="repuestosCounter" class="mono" style="font-size: 0.8rem; color: var(--text-muted);">1–4 / 10</span>
+            <button id="repuestosNextBtn" class="carousel-nav-btn" aria-label="Siguiente">→</button>
+          </div>
+        </div>
+
+        <!-- Carrusel Track -->
+        <div class="repuestos-carousel-container">
+          <div class="repuestos-track" id="repuestosTrack">
+            
+            <!-- 1 Bateria HP -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1769085794153-54fd3d57efaf?w=400&h=280&fit=crop&auto=format" alt="Batería HP Pavilion" loading="lazy" />
+                <span class="repuesto-marca-badge">HP</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Batería HP Pavilion 14/15</h3>
+                <p class="repuesto-desc">Li-ion 11.4V 41Wh · Compatible series 800049-001.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 85</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20la%20Bater%C3%ADa%20HP%20Pavilion" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 2 Cargador Dell -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=400&h=280&fit=crop&auto=format" alt="Cargador Dell 65W" loading="lazy" />
+                <span class="repuesto-marca-badge">Dell</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Cargador Dell 65W</h3>
+                <p class="repuesto-desc">19.5V · 3.34A · Conector 4.5mm. Series Inspiron y Vostro.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 75</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20el%20Cargador%20Dell" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 3 Pantalla 156 -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1511385348-a52b4a160dc2?w=400&h=280&fit=crop&auto=format" alt="Pantalla 15.6 FHD" loading="lazy" />
+                <span class="repuesto-marca-badge">Genérico</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Pantalla 15.6" Full HD IPS</h3>
+                <p class="repuesto-desc">1920×1080 · 30 pines · Compatible Lenovo, Asus, Acer.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 220</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20la%20Pantalla%2015.6" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 4 RAM DDR4 8GB -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1542978709-19c95dc3bc7e?w=400&h=280&fit=crop&auto=format" alt="RAM DDR4 8GB" loading="lazy" />
+                <span class="repuesto-marca-badge">Kingston</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">RAM DDR4 8 GB SO-DIMM</h3>
+                <p class="repuesto-desc">2666 MHz · Para laptop · Alta compatibilidad.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 95</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20la%20RAM%20DDR4%208GB" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 5 SSD NVMe 512GB -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1760623227551-2eae8f9cb675?w=400&h=280&fit=crop&auto=format" alt="SSD NVMe 512GB" loading="lazy" />
+                <span class="repuesto-marca-badge">Kingston</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">SSD NVMe M.2 512 GB</h3>
+                <p class="repuesto-desc">PCIe Gen3 · Lectura 3500 MB/s · Para laptop y PC.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 160</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20el%20SSD%20512GB" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 6 RAM DDR4 16GB -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?w=400&h=280&fit=crop&auto=format" alt="RAM DDR4 16GB" loading="lazy" />
+                <span class="repuesto-marca-badge">Samsung</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">RAM DDR4 16 GB SO-DIMM</h3>
+                <p class="repuesto-desc">3200 MHz · Ideal para edición y gaming en laptop.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 160</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20la%20RAM%2016GB" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 7 Teclado Lenovo -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1574012716378-0ca6f4c18c08?w=400&h=280&fit=crop&auto=format" alt="Teclado Lenovo" loading="lazy" />
+                <span class="repuesto-marca-badge">Lenovo</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Teclado Lenovo IdeaPad 3</h3>
+                <p class="repuesto-desc">Layout en español · Series 14IIL 15IIL · Plug & Play.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 70</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20el%20Teclado%20Lenovo" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 8 Cargador Universal -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1756043827116-5764e6d23d85?w=400&h=280&fit=crop&auto=format" alt="Cargador Universal" loading="lazy" />
+                <span class="repuesto-marca-badge">Genérico</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Cargador Universal 90W</h3>
+                <p class="repuesto-desc">Multi-punta · 18–20V · Compatible HP, Dell, Asus, Acer.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 65</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20el%20Cargador%20Universal" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 9 Bateria Asus -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1581244249923-172ef5029576?w=400&h=280&fit=crop&auto=format" alt="Batería Asus" loading="lazy" />
+                <span class="repuesto-marca-badge">Asus</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">Batería Asus VivoBook 15</h3>
+                <p class="repuesto-desc">C41N1904 · 63Wh · Series X512 M509 K512.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 90</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20la%20Bater%C3%ADa%20Asus" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+            <!-- 10 SSD SATA -->
+            <div class="tech-card repuesto-card">
+              <div class="repuesto-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=400&h=280&fit=crop&auto=format" alt="SSD SATA 2.5" loading="lazy" />
+                <span class="repuesto-marca-badge">Kingston</span>
+              </div>
+              <div class="repuesto-content">
+                <h3 class="repuesto-title">SSD SATA 2.5" 256 GB</h3>
+                <p class="repuesto-desc">500 MB/s lectura · Reemplaza disco antiguo. Plug & Play.</p>
+                <div class="repuesto-pricing">
+                  <span class="repuesto-price">desde S/ 110</span>
+                </div>
+                <a href="https://wa.me/51918682006?text=Hola,%20quisiera%20consultar%20por%20el%20SSD%20SATA" target="_blank" rel="noopener noreferrer" class="wa-btn repuesto-btn">
+                  Comprar / Consultar
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel-dots" id="repuestosDots"></div>
+
+        <!-- Banner de Repuesto Personalizado -->
+        <div class="banner-repuestos-custom">
+          <div class="banner-content">
+            <div class="banner-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <circle cx="11" cy="11" r="7" stroke="#EF7C00" stroke-width="2"/>
+                <path d="M16.5 16.5 L21 21" stroke="#EF7C00" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M8 11h6M11 8v6" stroke="#FFC107" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div style="flex: 1;">
+              <h3 style="font-size: 1rem; font-weight: 800;">¿No encuentras el repuesto que necesitas?</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">
+                Contamos con stock amplio y conseguimos piezas especiales bajo pedido. Escríbenos con el modelo de tu laptop y te cotizamos al instante.
+              </p>
+            </div>
+            <a href="https://wa.me/51918682006?text=Hola,%20busco%20un%20repuesto%20especial%20para%20mi%20laptop" target="_blank" rel="noopener noreferrer" class="wa-btn">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESENAS -->
+    <section class="section-resenas" id="resenas">
+      <div class="container">
+        <span class="section-label">// resenas</span>
+        <h2 style="font-size: 2rem; font-weight: 900; margin-top: 0.5rem;">Lo que dicen nuestros clientes</h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 2.5rem;">
+          Clientes satisfechos en Tacna, Perú.
+        </p>
+
+        <div class="resenas-grid">
+          <div class="tech-card resena-card">
+            <div class="resena-stars">★★★★★</div>
+            <p class="resena-quote">"El diagnóstico fue rapidísimo y muy transparente en el precio. Me entregaron el PC como nuevo."</p>
+            <div>
+              <p class="resena-author">Andrea López</p>
+              <p class="resena-role">Cliente</p>
+            </div>
+          </div>
+
+          <div class="tech-card resena-card">
+            <div class="resena-stars">★★★★★</div>
+            <p class="resena-quote">"Me ensamblaron todo el PC dentro del presupuesto. 100% recomendados."</p>
+            <div>
+              <p class="resena-author">Carlos Torres</p>
+              <p class="resena-role">Cliente</p>
+            </div>
+          </div>
+
+          <div class="tech-card resena-card">
+            <div class="resena-stars">★★★★★</div>
+            <p class="resena-quote">"Servicio honesto y rápido. Detectaron el problema de la tarjeta gráfica al instante."</p>
+            <div>
+              <p class="resena-author">Diego Rojas</p>
+              <p class="resena-role">Cliente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section-faq" id="faq">
+      <div class="container faq-container">
+        <span class="section-label">// preguntas frecuentes</span>
+        <h2 style="font-size: 2rem; font-weight: 900; margin-top: 0.5rem; margin-bottom: 2rem;">¿Tienes dudas?</h2>
+
+        <div class="faq-list">
+          
+          <div class="tech-card faq-item">
+            <button class="faq-question-btn">
+              <span>¿Cuánto tarda un diagnóstico?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p class="faq-answer-text">
+                El diagnóstico básico tarda entre 30 minutos y 2 horas. Te notificamos por WhatsApp con los resultados y el presupuesto exacto sin compromiso.
+              </p>
+            </div>
+          </div>
+
+          <div class="tech-card faq-item">
+            <button class="faq-question-btn">
+              <span>¿Tienen garantía las reparaciones?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p class="faq-answer-text">
+                Sí. Todas las reparaciones tienen garantía de 30 a 90 días en mano de obra y respetamos la garantía del fabricante en piezas y repuestos nuevos.
+              </p>
+            </div>
+          </div>
+
+          <div class="tech-card faq-item">
+            <button class="faq-question-btn">
+              <span>¿Trabajan con laptops y PC de escritorio?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p class="faq-answer-text">
+                Trabajamos con laptops de todas las marcas (HP, Dell, Lenovo, Asus, Acer, Apple, etc.), PC de escritorio, Todo en Uno (All-in-One), redes y software.
+              </p>
+            </div>
+          </div>
+
+          <div class="tech-card faq-item">
+            <button class="faq-question-btn">
+              <span>¿Puedo dejar mi equipo y retirarlo después?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p class="faq-answer-text">
+                Claro que sí. Puedes dejarlo en nuestro local del Mercadillo Bolognesi y te avisamos en cuanto esté listo. También brindamos servicio a domicilio.
+              </p>
+            </div>
+          </div>
+
+          <div class="tech-card faq-item">
+            <button class="faq-question-btn">
+              <span>¿Cuáles son las formas de pago?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p class="faq-answer-text">
+                Aceptamos efectivo, transferencias bancarias (BCP, Interbank, BBVA, Banco de la Nación) y pagos móviles (Yape, Plin). El diagnóstico es gratis si decides reparar con nosotros.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICANOS -->
+    <section class="section-location" id="ubicanos">
+      <div class="container">
+        <span class="section-label">// ubicanos</span>
+        <h2 style="font-size: 2rem; font-weight: 900; margin-top: 0.5rem; margin-bottom: 2rem;">Visítanos en el taller</h2>
+
+        <div class="location-grid">
+          
+          <div class="tech-card location-info-card">
+            <div class="location-detail-row">
+              <span class="location-icon">📍</span>
+              <div>
+                <p class="location-label">DIRECCIÓN</p>
+                <a href="https://www.google.com/maps/place/Servicio+T%C3%A9cnico+de+Computadoras+SOLUTION,+STAND+B-98+%2F4ta+Fila+%2FReferencia+Casa+De+Cambio+C.c.+Mercadillo+Bolognesi+Interior,+Av+Cnel.+Mendoza+1945,+Tacna+23000/data=!4m2!3m1!1s0x915ac54e63ca88c1:0x5e0fcd8fe73e956?entry=gps&coh=192189&g_ep=CAESCjExLjE0MC4xMDQYACCenQoqbCw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEU%3D" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="location-value location-maps-link" 
+                   title="Abrir ubicación en Google Maps">
+                  Mercadillo Bolognesi INT. B98 - E338, Tacna, Perú ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="location-detail-row">
+              <span class="location-icon">🕐</span>
+              <div>
+                <p class="location-label">HORARIO DE ATENCIÓN</p>
+                <p class="location-value">Lunes a Sábado: 10:00 am – 8:00 pm</p>
+              </div>
+            </div>
+
+            <div class="location-detail-row">
+              <span class="location-icon">📞</span>
+              <div>
+                <p class="location-label">TELÉFONO / WHATSAPP</p>
+                <p class="location-value">918 682 006</p>
+              </div>
+            </div>
+
+            <div class="location-detail-row">
+              <span class="location-icon">✉️</span>
+              <div>
+                <p class="location-label">CORREO ELECTRÓNICO</p>
+                <p class="location-value">soporte@solutiontechtacna.com</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/51918682006" target="_blank" rel="noopener noreferrer" class="wa-btn" style="justify-content: center; margin-top: 0.5rem;">
+              Escribir al WhatsApp
+            </a>
+          </div>
+
+          <div class="location-map-frame">
+            <a href="https://www.google.com/maps/place/Servicio+T%C3%A9cnico+de+Computadoras+SOLUTION,+STAND+B-98+%2F4ta+Fila+%2FReferencia+Casa+De+Cambio+C.c.+Mercadillo+Bolognesi+Interior,+Av+Cnel.+Mendoza+1945,+Tacna+23000/data=!4m2!3m1!1s0x915ac54e63ca88c1:0x5e0fcd8fe73e956?entry=gps&coh=192189&g_ep=CAESCjExLjE0MC4xMDQYACCenQoqbCw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICUEU%3D" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               title="Ver ubicación en Google Maps"
+               style="display: block; width: 100%; height: auto; overflow: hidden;">
+              <img src="assets/ubicacion-foto.jpeg"
+                   alt="Fachada y ubicación de Solution TechPRO en Mercadillo Bolognesi"
+                   loading="lazy"
+                   class="location-photo-img" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="container footer-flex">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="assets/logo.png" alt="Solution TechPRO" style="height: 2.25rem; width: 2.25rem; object-fit: contain; border-radius: 6px;" />
+        <div>
+          <p style="color: #ffffff; font-weight: 900; font-size: 0.875rem; letter-spacing: 0.05em;">SOLUTION TECHPRO</p>
+          <p class="mono" style="color: #FFC107; font-size: 0.7rem; margin-top: 2px;">TU ALIADO DE CONFIANZA</p>
+        </div>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 Solution TechPRO · Tacna, Perú
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/51918682006?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20técnica%20para%20mi%20equipo." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.115 1.523 5.845L.057 23.142a.5.5 0 00.617.617l5.297-1.466A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.013-1.376l-.359-.214-3.724 1.031 1.031-3.724-.214-.359A9.805 9.805 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+    </svg>
+    <span class="floating-whatsapp-tooltip">¿Consultas técnicas? Escríbenos</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

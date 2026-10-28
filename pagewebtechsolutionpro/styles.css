@@ -1,0 +1,20 @@
+/*
+   SOLUTION TECHPRO - HOJA DE ESTILOS CSS PRINCIPAL
+   
+   La arquitectura de estilos ha sido modularizada para mayor rendimiento y orden:
+   
+   1. css/general.css   -> Estilos globales: Variables de color (Light/Dark mode), reset,
+                           fuentes, botones, tarjetas técnicas, layout de hero compartido,
+                           barra de navegación (desktop y móvil), acordeón FAQ, footer y
+                           botón flotante de WhatsApp.
+   2. css/home.css      -> Estilos específicos de la página principal (index.html):
+                           Hero principal, grid interactivo de 12 servicios, carrusel de repuestos,
+                           banner especial, testimonios/reseñas y sección ubícanos con mapa.
+   3. css/servicios.css -> Estilos específicos de las páginas de detalle de servicios (*.html):
+                           Hero de servicio, banner de emergencia, tarjetas visuales de beneficios,
+                           tarjeta técnica de hero con especificaciones reales, pasos y barra CTA.
+*/
+
+@import url('css/general.css');
+@import url('css/home.css');
+@import url('css/servicios.css');
